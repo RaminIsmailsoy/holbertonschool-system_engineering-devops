@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1qulpDdwQargMyFJaHciYtHLQnPphLU9E/view?usp=shari
 
 You must be able to explain some specifics about this infrastructure:
 1. For every additional element, why you are adding it
-   To protect Web infrastructure. 
+   To protect Web infrastructure.
 
 2. What are firewalls for
    Firewalls allows, blocks, inspects incoming and outgoing network tarfic
@@ -21,17 +21,18 @@ You must be able to explain some specifics about this infrastructure:
    The monitoring tool reads log files on the server
 
 6. Explain what to do if you want to monitor your web server QPS
-   To monitor your web server's Queries Per Second (QPS), you will need to utilize specific tools and methodologies depending on your server environment. 
+   To monitor your web server's Queries Per Second (QPS), you will need to utilize specific tools and methodologies depending on your server environment.
    The general process involves using monitoring software, analyzing log files
 
 7. You must be able to explain what the issues are with this infrastructure:
-   
+   This allows manage Servers separately. Improves security.
 
 8. Why terminating SSL at the load balancer level is an issue
-
+   Terminating SSl will cause connection problems. Sensitive data can be exposed.
 
 9. Why having only one MySQL server capable of accepting writes is an issue
-
+   If the Master Server fails, then inserting data to Database will not occure.
 
 10. Why having servers with all the same components (database, web server and application server) might be a problem
-
+    All components in a one Server will be problem. If Server fails, recovering will cost money and time.
+	
