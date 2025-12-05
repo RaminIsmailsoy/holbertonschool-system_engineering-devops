@@ -1,1 +1,48 @@
-https://foobar.com
+https://drive.google.com/file/d/1W3bYlT5iLY6iqCt4bc4_VcRZlHPvS6St/view?usp=sharing
+
+
+
+
+1.What is a server
+A server is a powerful computer that provides services or resources to other computers (clients) over a network.
+
+2.What is the role of the domain name
+A domain name is a human-readable address used to access a website.
+
+3.What type of DNS record www is in www.foobar.com
+A record points www.foobar.com to an IP address.
+
+
+4.What is the role of the web server
+A web server handles HTTP/HTTPS requests and delivers:
+Static contents HTML, CSS, images, JS
+
+5.What is the role of the application server
+An application server runs dynamic code (backend logic).
+Node.js for JavaScript
+PHP-FPM for PHP
+
+
+6.What is the role of the database
+A database stores application data:
+MySQL, PostgreSQL, MongoDB
+
+
+7.What is the server using to communicate with the computer of the user requesting the website
+The server communicates with the user's browser over the HTTP(80)/HTTPS(443) protocol using the TCP/IP stack.
+
+
+8.SPOF(single point of failure).
+If any Serevrs becomes unavailable entire website goes down. There is no redundancy.
+
+
+9. Downtime.
+If Server crashes or Network fails The website becomes unavailable. No failover or backup system exists.
+
+
+10.Scalability.	
+When traffic increases Web server queue grows.
+A single machine cannot handle high load. You need load balancers, multiple servers, and replication.
+
+
+
